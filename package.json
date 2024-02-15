@@ -1,0 +1,17 @@
+{
+  "name": "neclauncher",
+  "version": "1.0.3",
+  "main": "electron/runapp.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . karaoke-poe --overwrite --asar=true --platform=win32 --arch=ia32 --out=./compiled"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron-packager": "^17.1.2",
+    "electron": "^28.1.1"
+  }
+}

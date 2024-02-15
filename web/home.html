@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="library/jquery.js"></script>
+    <script src="init.js"></script>
+    <link rel="stylesheet" href="library/materials.css">
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+    <div id="Game">
+        <div class="wrapper hidden flex flex-col">
+            <header class="flex v-center">
+                <a data-attr="Stats" href="#" class="profile"></a>
+                <div class="time">
+                    <span class="time-txt"></span>
+                </div>
+                <div class="wifi">
+                    <img src="" />
+                </div>
+                <div class="battery">
+                    <span class="battery-level">100<i>%</i></span>
+                    <span class="material-symbols-outlined">
+                        battery_full_alt
+                    </span>
+                </div>
+            </header>
+            <main>
+                <div class="games">
+                </div>
+                <nav>
+                    <a data-attr="App Store" href="#" onclick="nav.store()"><span class="material-symbols-outlined">
+                            shopping_bag
+                        </span></a>
+                    <a data-attr="Open desktop" href="#" onclick="nav.close()"><span class="material-symbols-outlined">
+                            devices
+                        </span></a>
+                    <a data-attr="Settings" href="#" onclick="nav.settings()"><span class="material-symbols-outlined">
+                            settings
+                        </span></a>
+                    <a data-attr="More App" href="#" onclick="nav.appMore()"><span class="material-symbols-outlined">
+                            apps
+                        </span></a>
+                    <a data-attr="Sleep Mode" href="#" onclick="nav.sleep()"><span class="material-symbols-outlined">
+                            bedtime
+                        </span></a>
+                </nav>
+            </main>
+            <footer class="flex">
+                <div class="mode">
+                    <img src="" />
+                </div>
+                <div class="accept flex v-center">
+                    <div class="btn">A</div>
+                    <span>OK</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="library/spatial_navigation.js"></script>
+    <script src="home.js"></script>
+    <script src="library/sameSizer.js"></script>
+</body>
+
+</html>

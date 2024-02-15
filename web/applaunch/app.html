@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Launcher</title>
+    <link rel="stylesheet" href="library/materials.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <img class="banner" src=""></img>
+    <span>Running Application ...</span>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        document.querySelector('.banner').src = urlParams.get('banner')
+        if(urlParams.get('launchtype') == "url"){
+        window.location = urlParams.get('url')
+        } else {
+
+        }
+        setTimeout(window.close, 2000)
+    </script>
+</body>
+
+</html>
